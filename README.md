@@ -110,7 +110,7 @@ The client will run once, then exit.
 
 1. Create a client to establish TCP socket connections to HTTP servers
 1. The node command requires a single argument, the host and uri to request a resource from
-  - example: `www.devleague.com/apply`
+  - example: `${yourPixelPainterUrl}`
 1. Transmit 'standard' HTTP Headers to the server
 1. Wait for a response from the server
 1. When the server responds, display the response message body to the terminal
@@ -119,7 +119,7 @@ The client will run once, then exit.
 example usage:
 
 ```
-node client.js www.devleague.com
+node client.js ${yourPixelPainterUrl}
 ```
 
 #### HTTP Request Headers
@@ -140,7 +140,7 @@ Parse the response headers, and store them in a hash table for later use.
 Test by requesting web servers with domain names, and your own running `server.js`
 
 ```
-node client.js www.devleague.com
+node client.js ${yourPixelPainterUrl}
 node client.js localhost
 ```
 
